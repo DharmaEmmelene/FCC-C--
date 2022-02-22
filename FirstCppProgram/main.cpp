@@ -19,4 +19,9 @@ int main()
 
   sum = addNumbers(25, 7);
   std::cout << "Sum : " << sum << std::endl; // 32
+
+  sum = addNumbers(30, 54);
+  std::cout << "Sum : " << sum << std::endl; // 84
+
+  std::cout << "Sum : " << addNumbers(3, 42) << std::endl;
 }
