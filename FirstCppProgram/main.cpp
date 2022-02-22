@@ -4,6 +4,7 @@ int main() // main function --starting point of C++ program (entry point) execut
 {
   for (int i = 0; i < 10; i++)
   {
-    std::cout << "Dharma" << std::endl;
+    // compile time error
+    std::cout << "Dharma" << std::endl return 0;
   }
 }
