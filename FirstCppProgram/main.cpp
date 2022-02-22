@@ -1,14 +1,10 @@
-#include <iostream> //3rd party library to recognise commands
+#include <iostream>
 
-int main() // main function --starting point of C++ program (entry point) executed in order
+int main()
 {
-  for (int i = 0; i < 10; i++)
-  {
-    // compile time error
-    std::cout << "Dharma" << std::endl;
-    // Runtime error
-    int value = 7 / 0;
-    std::cout << "value : " << value << std::endl;
-    return 0;
-  }
+  int first_number{13}; // Statement
+  int second_number{7};
+
+  std::cout << "First number : " << first_number << std::endl;
+  std::cout << "Second number : " << second_number << std::endl;
 }
