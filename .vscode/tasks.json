@@ -15,9 +15,31 @@
       "options": {
         "cwd": "${fileDirname}"
       },
-      "problemMatcher": ["$gcc"],
+      "problemMatcher": [
+        "$gcc"
+      ],
       "group": "build",
       "detail": "compiler: C:\\mingw64\\bin\\g++.exe"
+    },
+    {
+      "type": "cppbuild",
+      "label": "Build with Clang 13.0.0",
+      "command": "C:\\mingw64\\bin\\clang++.exe",
+      "args": [
+        "-g",
+        "-std=c++20",
+        "${workspaceFolder}\\*.cpp",
+        "-o",
+        "${fileDirname}\\rooster.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "compiler: C:\\mingw64\\bin\\clang++.exe"
     }
   ]
 }
