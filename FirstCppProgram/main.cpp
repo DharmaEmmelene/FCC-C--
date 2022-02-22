@@ -1,13 +1,9 @@
-#include <iostream>
+#include <iostream> //3rd party library to recognise commands
 
-consteval int get_value()
-{
-  return 4;
-}
-
-int main()
+int main() // main function --starting point of C++ program (entry point) executed in order
 {
 
-  std::cout << "Hello World!" << std::endl;
-  return 0;
+  std::cout << "Number 1" << std::endl; // endl --new line
+  std::cout << "Number 2";
+  std::cout << "Number 3";
 }
