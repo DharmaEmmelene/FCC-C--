@@ -7,4 +7,7 @@ int main()
 
   std::cout << "First number : " << first_number << std::endl;
   std::cout << "Second number : " << second_number << std::endl;
+
+  int sum = first_number + second_number;
+  std::cout << "Sum : " << sum << std::endl;
 }
