@@ -1,27 +1,26 @@
 #include <iostream>
-
-int addNumbers(int first_param, int second_param) // specify type --int
-{
-  int result = first_param + second_param;
-  return result;
-}
+#include <string>
 
 int main()
 {
-  int first_number{13}; // Statement
-  int second_number{7};
+  // Printing data
+  std::cout << "Hello C++20!" << std::endl;
+  int age{21};
+  std::cout << "Age : " << age << std::endl;
 
-  std::cout << "First number : " << first_number << std::endl;   // 13
-  std::cout << "Second number : " << second_number << std::endl; // 7
+  std::cerr << "Error message : Something is wrong" << std::endl;
+  std::clog << "Log message : Something happened" << std::endl;
 
-  int sum = first_number + second_number;
-  std::cout << "Sum : " << sum << std::endl; // 20
+  // Data
+  /*
+  int age1;
+  std::string name;
 
-  sum = addNumbers(25, 7);
-  std::cout << "Sum : " << sum << std::endl; // 32
+  std::cout << "Please type your name and age : " << std::endl;
 
-  sum = addNumbers(30, 54);
-  std::cout << "Sum : " << sum << std::endl; // 84
+  std::cin >> name;
+  std::cin >> age1;
 
-  std::cout << "Sum : " << addNumbers(3, 42) << std::endl;
+  std::cout "Hello " << name << " you are " << age1 << " years old!" << std::endl;
+  */
 }
