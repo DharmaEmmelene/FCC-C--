@@ -46,4 +46,8 @@ int main()
   std::cout << "Truck count : " << truck_count << std::endl;
   std::cout << "Vehicle count : " << vehicle_count << std::endl;
   std::cout << "Narrowing conversion : " << narrowing_conversion_assignment << std::endl;
+
+  // Check the size with sizeof
+  std::cout << "sizeof int : " << sizeof(int) << std::endl;
+  std::cout << "sizeof truck_count : " << sizeof(truck_count) << std::endl;
 }
