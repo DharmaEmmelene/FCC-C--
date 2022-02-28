@@ -35,6 +35,10 @@
     "xtr1common": "cpp",
     "xutility": "cpp",
     "string": "cpp",
-    "tuple": "cpp"
+    "tuple": "cpp",
+    "ctime": "cpp",
+    "iomanip": "cpp",
+    "xlocmon": "cpp",
+    "xloctime": "cpp"
   }
 }

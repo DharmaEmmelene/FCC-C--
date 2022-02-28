@@ -23,4 +23,14 @@ int main()
   {
     std::cout << "The light is NOT green" << std::endl;
   }
+
+  // sizeof()
+  // std::cout << "sizeof(bool) : " << sizeof(bool) << std::endl;
+
+  // Printing out boolean values
+  // 1 --> true
+  // 0 --> false
+  std::cout << std::boolalpha;
+  std::cout << "red_light : " << red_light << std::endl;
+  std::cout << "green_light : " << green_light << std::endl;
 }
