@@ -25,4 +25,11 @@ int main()
 
   state = true;
   std::cout << "state : " << state << std::endl;
+
+  std::cout << std::endl;
+
+  // Auto type deduction
+  auto var3{333u}; // Declare & init with type deduction
+  var3 = -22;      // Assign negative number. DANGER!
+  std::cout << "var3 : " << var3 << std::endl;
 }
