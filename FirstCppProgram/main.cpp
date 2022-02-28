@@ -38,4 +38,19 @@ int main()
   std::cout << "number 7 is : " << number7 << std::endl;
   std::cout << "number 8 is : " << number8 << std::endl;
   std::cout << "number 9 is : " << number9 << std::endl;
+
+  double number10{-5.6}; // init to 0
+  double number11{};     // init to 0
+  double number12{};
+
+  // Infinity
+  double result{number10 / number11};
+
+  std::cout << number10 << "/" << number11 << " yields " << result << std::endl;
+  std::cout << result << " + " << number10 << " yields " << result + number10 << std::endl;
+
+  // NaN
+  result = number11 / number12;
+
+  std::cout << number11 << "/" << number12 << " = " << result << std::endl;
 }
