@@ -14,4 +14,11 @@ int main()
   std::cout << character3 << std::endl;
   std::cout << character4 << std::endl;
   std::cout << character5 << std::endl;
+
+  // 1 byte in memory : 2^8 = 256 different values (0 ~ 255)
+  std::cout << std::endl;
+
+  char value = 65; // ASCII code "A"
+  std::cout << "value : " << value << std::endl;
+  std::cout << "value(int) : " << static_cast<int>(value) << std::endl;
 }
