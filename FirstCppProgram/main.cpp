@@ -1,24 +1,25 @@
 #include <iostream>
 
 int main()
-// Characters & Text
+// Auto keyword
 {
-  char character1{'a'};
-  char character2{'r'};
-  char character3{'r'};
-  char character4{'o'};
-  char character5{'w'};
+  auto var1{12};
+  auto var2{13.0};
+  auto var3{14.0f};
+  auto var4{15.0l};
+  auto var5{'e'};
 
-  std::cout << character1 << std::endl;
-  std::cout << character2 << std::endl;
-  std::cout << character3 << std::endl;
-  std::cout << character4 << std::endl;
-  std::cout << character5 << std::endl;
+  // int modifier suffixes
+  auto var6{123u};
+  auto var7{123ul};
+  auto var8{123ll};
 
-  // 1 byte in memory : 2^8 = 256 different values (0 ~ 255)
-  std::cout << std::endl;
-
-  char value = 65; // ASCII code "A"
-  std::cout << "value : " << value << std::endl;
-  std::cout << "value(int) : " << static_cast<int>(value) << std::endl;
+  std::cout << "var 1 occupies : " << sizeof(var1) << " bytes" << std::endl;
+  std::cout << "var 2 occupies : " << sizeof(var2) << " bytes" << std::endl;
+  std::cout << "var 3 occupies : " << sizeof(var3) << " bytes" << std::endl;
+  std::cout << "var 4 occupies : " << sizeof(var4) << " bytes" << std::endl;
+  std::cout << "var 5 occupies : " << sizeof(var5) << " bytes" << std::endl;
+  std::cout << "var 6 occupies : " << sizeof(var6) << " bytes" << std::endl;
+  std::cout << "var 7 occupies : " << sizeof(var7) << " bytes" << std::endl;
+  std::cout << "var 8 occupies : " << sizeof(var8) << " bytes" << std::endl;
 }
