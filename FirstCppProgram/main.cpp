@@ -21,6 +21,6 @@ int main()
   std::cout << "number 3 is : " << number3 << std::endl; // 15+ digits
 
   // Float issues: Precision is too limited for most applications
-  float number4{192400023.0f}; // Error: narrowing conversion
+  double number4{192400023.0}; // Error: narrowing conversion
   std::cout << "number 4 is : " << number4 << std::endl;
 }
