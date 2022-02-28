@@ -14,6 +14,15 @@ int main()
   double var2{44.55}; // Declare & init
   std::cout << "var2 : " << var2 << std::endl;
 
-  var2 = 99.99;
+  var2 = 99.99; // Assign
   std::cout << "var2 : " << var2 << std::endl;
+
+  std::cout << std::endl;
+
+  bool state{false}; // Declare & init
+  std::cout << std::boolalpha;
+  std::cout << "state : " << state << std::endl;
+
+  state = true;
+  std::cout << "state : " << state << std::endl;
 }
