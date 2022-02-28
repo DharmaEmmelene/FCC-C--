@@ -3,8 +3,8 @@
 int main()
 // Booleans
 {
-  bool red_light{true};
-  bool green_light{false};
+  bool red_light{false};
+  bool green_light{true};
 
   if (red_light == true)
   {
@@ -13,5 +13,14 @@ int main()
   else
   {
     std::cout << "Go through" << std::endl;
+  }
+
+  if (green_light)
+  {
+    std::cout << "The light is green" << std::endl;
+  }
+  else
+  {
+    std::cout << "The light is NOT green" << std::endl;
   }
 }
