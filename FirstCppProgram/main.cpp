@@ -21,4 +21,8 @@ int main()
   // Multiplication
   result = number1 * number2;
   std::cout << "result : " << result << std::endl;
+
+  // Division
+  result = number2 / number1;
+  std::cout << "result : " << result << std::endl;
 }
