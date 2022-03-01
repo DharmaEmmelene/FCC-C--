@@ -25,4 +25,8 @@ int main()
   // Division
   result = number2 / number1;
   std::cout << "result : " << result << std::endl;
+
+  // Modulus
+  result = number2 % number1;
+  std::cout << "result : " << result << std::endl;
 }
