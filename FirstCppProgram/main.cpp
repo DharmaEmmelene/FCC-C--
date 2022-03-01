@@ -10,4 +10,11 @@ int main()
 
   int result = number1 + number2;
   std::cout << "result : " << result << std::endl;
+
+  // Subtraction
+  result = number2 - number1;
+  std::cout << "result : " << result << std::endl;
+
+  result = number1 - number2;
+  std::cout << "result : " << result << std::endl;
 }
