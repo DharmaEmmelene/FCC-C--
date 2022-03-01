@@ -17,4 +17,8 @@ int main()
 
   result = number1 - number2;
   std::cout << "result : " << result << std::endl;
+
+  // Multiplication
+  result = number1 * number2;
+  std::cout << "result : " << result << std::endl;
 }
