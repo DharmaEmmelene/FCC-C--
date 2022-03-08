@@ -15,4 +15,10 @@ int main()
   std::cout << "a && b : " << (a && b) << std::endl;           // false
   std::cout << "a && c : " << (a && c) << std::endl;           // true
   std::cout << "a && b && c : " << (a && b && c) << std::endl; // false
+
+  // OR : Evaluates to true when at least one operand is true. A single true operand will push the entire expression to evaluating as true
+  std::cout << "-----------Basic OR operations-----------" << std::endl;
+  std::cout << "a || b : " << (a || b) << std::endl;            // true
+  std::cout << "a || c : " << (a || c) << std::endl;            // true
+  std::cout << " a || b || c : " << (a || b || c) << std::endl; // true
 }
