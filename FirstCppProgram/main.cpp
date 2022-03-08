@@ -14,4 +14,9 @@ int main()
   std::cout << std::boolalpha; // True/false instead of 1 / 0
 
   std::cout << "number1 < number2 : " << (number1 < number2) << std::endl;
+  std::cout << "number1 <= number2 : " << (number1 <= number2) << std::endl;
+  std::cout << "number1 > number2 : " << (number1 > number2) << std::endl;
+  std::cout << "number1 >= number2 : " << (number1 >= number2) << std::endl;
+  std::cout << "number1 == number2 : " << (number1 == number2) << std::endl;
+  std::cout << "number1 != number2 : " << (number1 != number2) << std::endl;
 }
