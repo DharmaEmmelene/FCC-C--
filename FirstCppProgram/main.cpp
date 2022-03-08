@@ -37,4 +37,11 @@ int main()
   std::cout << "The value is (prefix++ in place) : " << ++value << std::endl; // 6
 
   std::cout << std::endl;
+
+  value = 5; // Reset Value
+  --value;
+  std::cout << "The value is (prefix--) : " << value << std::endl; // 4
+
+  value = 5;                                                                  // Reset value
+  std::cout << "The value is (prefix-- in place) : " << --value << std::endl; // 4
 }
