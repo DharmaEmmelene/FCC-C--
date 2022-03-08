@@ -15,5 +15,10 @@ int main()
   // Decrement - 1
   value = value - 1;
   std::cout << "The value is : " << value << std::endl; // 4
+  std::cout << "Postfix Increment & decrement" << std::endl;
+
+  value = 5;
+  std::cout << "The value is (incrementing) : " << value++ << std::endl; // 5
+  std::cout << "The value is : " << value << std::endl;                  // 6
   std::cout << std::endl;
 }
