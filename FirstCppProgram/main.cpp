@@ -14,4 +14,6 @@ int main()
   std::cout << "The value is (after -=5) : " << value << std::endl; // 45
   value *= 2;
   std::cout << "The value is (after *=2) : " << value << std::endl; // 90
+  value /= 3;
+  std::cout << "The value is (after /=3) : " << value << std::endl; // 30
 }
