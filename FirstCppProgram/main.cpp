@@ -2,30 +2,18 @@
 // Data Ops
 
 int main()
-// Precedence & Associativity
+// Prefix & Postfix
 {
-  int a{6};
-  int b{3};
-  int c{8};
-  int d{9};
-  int e{3};
-  int f{2};
-  int g{5};
+  int value{5};
 
-  int result = a + b * c - d / e - f + g; // 6 + 24 - 3 - 2 + 5
+  // Increment + 1
+  value = value + 1;
+  std::cout << "The value is : " << value << std::endl; // 6
 
-  std::cout << "result : " << result << std::endl;
+  value = 5; // Reset the value 5
 
-  result = a / b * c + d - e + f;
-  std::cout << "result : " << result << std::endl; // 16 + 9 - 3 - 2
-
-  // Refactor
-  result = a + (b * c) - (d / e) - f + g;
-  std::cout << "result : " << result << std::endl;
-
-  result = ((a / b) * c) + d - e + f;
-  std::cout << "result : " << result << std::endl;
-
-  result = (a + b) * c - d / e - f + g;
-  std::cout << "result : " << result << std::endl;
+  // Decrement - 1
+  value = value - 1;
+  std::cout << "The value is : " << value << std::endl; // 4
+  std::cout << std::endl;
 }
