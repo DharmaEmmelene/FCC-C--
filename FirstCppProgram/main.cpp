@@ -2,26 +2,17 @@
 // Data Ops
 
 int main()
-// Relational Ops
+// Logical Ops
 {
-  int number1{45};
-  int number2{60};
-  std::cout << "number1 : " << number1 << std::endl;
-  std::cout << "number2 : " << number2 << std::endl;
+  bool a{true};
+  bool b{false};
+  bool c{true};
 
-  std::cout << "-----------Comparing variables------------" << std::endl;
+  std::cout << std::boolalpha;
 
-  std::cout << std::boolalpha; // True/false instead of 1 / 0
-
-  std::cout << "number1 < number2 : " << (number1 < number2) << std::endl;   // true
-  std::cout << "number1 <= number2 : " << (number1 <= number2) << std::endl; // true
-  std::cout << "number1 > number2 : " << (number1 > number2) << std::endl;   // false
-  std::cout << "number1 >= number2 : " << (number1 >= number2) << std::endl; // false
-  std::cout << "number1 == number2 : " << (number1 == number2) << std::endl; // false
-  std::cout << "number1 != number2 : " << (number1 != number2) << std::endl; // true
-  std::cout << std::endl;
-
-  std::cout << "Store comparison result & use it later" << std::endl;
-  bool result = (number1 == number2);
-  std::cout << number1 << " == " << number2 << " : " << result << std::endl;
+  // AND : Evaluates to true when all operands are true. A single false operand will drag the entire expression to evaluating false
+  std::cout << "---------------Basic AND operations-----------------" << std::endl;
+  std::cout << "a && b : " << (a && b) << std::endl;           // false
+  std::cout << "a && c : " << (a && c) << std::endl;           // true
+  std::cout << "a && b && c : " << (a && b && c) << std::endl; // false
 }
