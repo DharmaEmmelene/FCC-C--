@@ -26,4 +26,7 @@ int main()
   std::cout << "!a : " << !a << std::endl; // false
   std::cout << "!b : " << !b << std::endl; // true
   std::cout << "!c : " << !c << std::endl; // false
+
+  std::cout << "------------Combining Logical Operators----------------" << std::endl;
+  std::cout << "!(a && b) || c : " << (!(a && b) || c) << std::endl; // true
 }
