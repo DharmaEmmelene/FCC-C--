@@ -142,17 +142,51 @@ int main()
 
   // uppercase and nouppercase
 
-  int pos_int{717171};
-  std::cout << "pos_int (nouppercase : deafult) : " << std::endl;
-  std::cout << "pos_int (dec) : " << std::dec << pos_int << std::endl;
-  std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
-  std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
+  /*   int pos_int{717171};
+    std::cout << "pos_int (nouppercase : deafult) : " << std::endl;
+    std::cout << "pos_int (dec) : " << std::dec << pos_int << std::endl;
+    std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
+    std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
+    std::cout << "------------" << std::endl;
+
+    std::cout << "pos_int (uppercase) : " << std::endl;
+    std::cout << std::uppercase;
+    std::cout << "pos_int (dec) : " << std::dec << pos_int << std::endl;
+    std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
+    std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
+    std::cout << "------------" << std::endl; */
+
+  // fixed & scientific : for floating point values
+
+  double a{3.1415926535897932384626433832795};
+  double b{2006.0};
+  double c{1.34e-10};
+
+  std::cout << "double values (default : use scientific where necessary) : " << std::endl;
+  std::cout << "a : " << a << std::endl;
+  std::cout << "b : " << b << std::endl;
+  std::cout << "c : " << c << std::endl;
+
   std::cout << "------------" << std::endl;
 
-  std::cout << "pos_int (uppercase) : " << std::endl;
-  std::cout << std::uppercase;
-  std::cout << "pos_int (dec) : " << std::dec << pos_int << std::endl;
-  std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
-  std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
+  std::cout << "double values (fixed) : " << std::endl;
+  std::cout << std::fixed;
+  std::cout << "a : " << a << std::endl;
+  std::cout << "b : " << b << std::endl;
+  std::cout << "c : " << c << std::endl;
+  std::cout << "------------" << std::endl;
+
+  std::cout << "double values (scientific) : " << std::endl;
+  std::cout << std::scientific;
+  std::cout << "a : " << a << std::endl;
+  std::cout << "b : " << b << std::endl;
+  std::cout << "c : " << c << std::endl;
+  std::cout << "------------" << std::endl;
+
+  std::cout << "double values (back to defaults) : " << std::endl;
+  std::cout.unsetf(std::ios::scientific | std::ios::fixed); // hack
+  std::cout << "a : " << a << std::endl;
+  std::cout << "b : " << b << std::endl;
+  std::cout << "c : " << c << std::endl;
   std::cout << "------------" << std::endl;
 }
