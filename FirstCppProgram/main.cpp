@@ -126,4 +126,9 @@ int main()
   std::cout << "pos_int (dec) : " << std::dec << pos_int << std::endl;
   std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
   std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
+
+  std::cout << "neg_int in differnet bases : " << std::endl;
+  std::cout << "neg_int (dec) : " << std::dec << neg_int << std::endl;
+  std::cout << "neg_int (hex) : " << std::hex << neg_int << std::endl;
+  std::cout << "neg_int (oct) : " << std::oct << neg_int << std::endl;
 }
