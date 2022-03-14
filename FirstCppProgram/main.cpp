@@ -57,20 +57,24 @@ int main()
 
   std::cout << "------------" << std::endl; */
 
-  std::cout << "Formatted table : " << std::endl;
+  /*   std::cout << "Formatted table : " << std::endl;
 
-  std::cout << std::setw(10) << "Firstname" << std::setw(10) << "Lastname" << std::setw(5) << "Age" << std::endl;
-  std::cout << std::setw(10) << "Daniel" << std::setw(10) << "Gray" << std::setw(5) << "25" << std::endl;
-  std::cout << std::setw(10) << "Stanley" << std::setw(10) << "Woods" << std::setw(5) << "33" << std::endl;
-  std::cout << std::setw(10) << "Jordan" << std::setw(10) << "Parker" << std::setw(5) << "45" << std::endl;
-  std::cout << std::setw(10) << "Joe" << std::setw(10) << "Ball" << std::setw(5) << "21" << std::endl;
-  std::cout << std::setw(10) << "Josh" << std::setw(10) << "Carr" << std::setw(5) << "27" << std::endl;
-  std::cout << std::setw(10) << "Izaiah" << std::setw(10) << "Robinson" << std::setw(5) << "29" << std::endl;
+    std::cout << std::setw(10) << "Firstname" << std::setw(10) << "Lastname" << std::setw(5) << "Age" << std::endl;
+    std::cout << std::setw(10) << "Daniel" << std::setw(10) << "Gray" << std::setw(5) << "25" << std::endl;
+    std::cout << std::setw(10) << "Stanley" << std::setw(10) << "Woods" << std::setw(5) << "33" << std::endl;
+    std::cout << std::setw(10) << "Jordan" << std::setw(10) << "Parker" << std::setw(5) << "45" << std::endl;
+    std::cout << std::setw(10) << "Joe" << std::setw(10) << "Ball" << std::setw(5) << "21" << std::endl;
+    std::cout << std::setw(10) << "Josh" << std::setw(10) << "Carr" << std::setw(5) << "27" << std::endl;
+    std::cout << std::setw(10) << "Izaiah" << std::setw(10) << "Robinson" << std::setw(5) << "29" << std::endl;
 
-  std::cout
-      << "------------" << std::endl;
+    std::cout
+        << "------------" << std::endl;*/
 
-  int col_width{14};
+  // justify : Values can be justified in their fields: left, right, internal
+  std::cout << "Right justified table (default) : " << std::endl;
+  std::cout << std::right;
+
+  int col_width{20};
   std::cout << std::setw(col_width) << "Lastname" << std::setw(col_width) << "Firstname" << std::setw(col_width) << "Age" << std::endl;
   std::cout << std::setw(col_width) << "Gray" << std::setw(col_width) << "Daniel" << std::setw(col_width) << "25" << std::endl;
   std::cout << std::setw(col_width) << "Woods" << std::setw(col_width) << "Stanley" << std::setw(col_width) << "33" << std::endl;
@@ -78,4 +82,7 @@ int main()
   std::cout << std::setw(col_width) << "Ball" << std::setw(col_width) << "Joe" << std::setw(col_width) << "21" << std::endl;
   std::cout << std::setw(col_width) << "Carr" << std::setw(col_width) << "Josh" << std::setw(col_width) << "27" << std::endl;
   std::cout << std::setw(col_width) << "Robinson" << std::setw(col_width) << "Izaiah" << std::setw(col_width) << "29" << std::endl;
+
+  std::cout
+      << "------------" << std::endl;
 }
