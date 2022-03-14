@@ -17,5 +17,11 @@ int main()
   std::cout << "------------" << std::endl;
 
   std::cout << "Hello\n";
-  std::cout << "World\n";
+  std::cout << "World!\n";
+
+  std::cout << "------------" << std::endl;
+
+  // std::flush : flushes the output buffer to its final destination
+  std::cout << "This is a nice message...." << std::endl
+            << std::flush;
 }
