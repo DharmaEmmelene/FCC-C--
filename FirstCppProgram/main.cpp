@@ -112,7 +112,7 @@ int main()
 
   // different number systems : std::dec, std::hex, std::oct
 
-  int pos_int{717171};
+  /* int pos_int{717171};
   int neg_int{-47247};
   double double_var{498.32};
 
@@ -138,5 +138,21 @@ int main()
   std::cout << "double_var (dec) : " << std::dec << double_var << std::endl;
   std::cout << "double_var (hex) : " << std::hex << double_var << std::endl;
   std::cout << "double_var(oct) : " << std::oct << double_var << std::endl;
+  std::cout << "------------" << std::endl; */
+
+  // uppercase and nouppercase
+
+  int pos_int{717171};
+  std::cout << "pos_int (nouppercase : deafult) : " << std::endl;
+  std::cout << "pos_int (dec) : " << std::dec << pos_int << std::endl;
+  std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
+  std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
+  std::cout << "------------" << std::endl;
+
+  std::cout << "pos_int (uppercase) : " << std::endl;
+  std::cout << std::uppercase;
+  std::cout << "pos_int (dec) : " << std::dec << pos_int << std::endl;
+  std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
+  std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
   std::cout << "------------" << std::endl;
 }
