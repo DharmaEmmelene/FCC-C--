@@ -72,21 +72,21 @@ int main()
 
   // setfill
 
-  std::cout << "Table with fill characters : " << std::endl;
+  /*   std::cout << "Table with fill characters : " << std::endl;
 
-  int col_width{20};
-  std::cout << std::left;
-  std::cout << std::setfill('-'); // fill char
-  std::cout << std::setw(col_width) << "Lastname" << std::setw(col_width) << "Firstname" << std::setw(col_width) << "Age" << std::endl;
-  std::cout << std::setw(col_width) << "Gray" << std::setw(col_width) << "Daniel" << std::setw(col_width) << "25" << std::endl;
-  std::cout << std::setw(col_width) << "Woods" << std::setw(col_width) << "Stanley" << std::setw(col_width) << "33" << std::endl;
-  std::cout << std::setw(col_width) << "Parker" << std::setw(col_width) << "Jordan" << std::setw(col_width) << "45" << std::endl;
-  std::cout << std::setw(col_width) << "Ball" << std::setw(col_width) << "Joe" << std::setw(col_width) << "21" << std::endl;
-  std::cout << std::setw(col_width) << "Carr" << std::setw(col_width) << "Josh" << std::setw(col_width) << "27" << std::endl;
-  std::cout << std::setw(col_width) << "Robinson" << std::setw(col_width) << "Izaiah" << std::setw(col_width) << "29" << std::endl;
+    int col_width{20};
+    std::cout << std::left;
+    std::cout << std::setfill('-'); // fill char
+    std::cout << std::setw(col_width) << "Lastname" << std::setw(col_width) << "Firstname" << std::setw(col_width) << "Age" << std::endl;
+    std::cout << std::setw(col_width) << "Gray" << std::setw(col_width) << "Daniel" << std::setw(col_width) << "25" << std::endl;
+    std::cout << std::setw(col_width) << "Woods" << std::setw(col_width) << "Stanley" << std::setw(col_width) << "33" << std::endl;
+    std::cout << std::setw(col_width) << "Parker" << std::setw(col_width) << "Jordan" << std::setw(col_width) << "45" << std::endl;
+    std::cout << std::setw(col_width) << "Ball" << std::setw(col_width) << "Joe" << std::setw(col_width) << "21" << std::endl;
+    std::cout << std::setw(col_width) << "Carr" << std::setw(col_width) << "Josh" << std::setw(col_width) << "27" << std::endl;
+    std::cout << std::setw(col_width) << "Robinson" << std::setw(col_width) << "Izaiah" << std::setw(col_width) << "29" << std::endl;
 
-  std::cout
-      << "------------" << std::endl;
+    std::cout
+        << "------------" << std::endl; */
 
   /*   // Internal justified : sign is left justified, data is right justified
     std::cout << "Internal justified : " << std::endl;
@@ -94,4 +94,19 @@ int main()
     std::cout << std::setw(10) << -123.45 << std::endl;
     std::cout << std::internal;
     std::cout << std::setw(10) << -123.45 << std::endl; */
+
+  // positive
+
+  int pos_num{34};
+  int neg_num{-45};
+
+  std::cout << "pos_num : " << pos_num << std::endl;
+  std::cout << "neg_num : " << neg_num << std::endl;
+  std::cout << std::showpos;
+  std::cout << "pos_num : " << pos_num << std::endl;
+  std::cout << "neg_num : " << neg_num << std::endl;
+  std::cout << std::endl;
+  std::cout << std::noshowpos;
+  std::cout << "pos_num  : " << pos_num << std::endl;
+  std::cout << "neg_num : " << neg_num << std::endl;
 }
