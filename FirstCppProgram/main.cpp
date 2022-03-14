@@ -71,8 +71,8 @@ int main()
         << "------------" << std::endl;*/
 
   // justify : Values can be justified in their fields: left, right, internal
-  std::cout << "Right justified table (default) : " << std::endl;
-  std::cout << std::right;
+  std::cout << "Left justified table (default) : " << std::endl;
+  std::cout << std::left;
 
   int col_width{20};
   std::cout << std::setw(col_width) << "Lastname" << std::setw(col_width) << "Firstname" << std::setw(col_width) << "Age" << std::endl;
