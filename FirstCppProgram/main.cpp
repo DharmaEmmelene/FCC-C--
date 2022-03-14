@@ -97,16 +97,33 @@ int main()
 
   // positive
 
-  int pos_num{34};
-  int neg_num{-45};
+  /*   int pos_num{34};
+    int neg_num{-45};
 
-  std::cout << "pos_num : " << pos_num << std::endl;
-  std::cout << "neg_num : " << neg_num << std::endl;
-  std::cout << std::showpos;
-  std::cout << "pos_num : " << pos_num << std::endl;
-  std::cout << "neg_num : " << neg_num << std::endl;
-  std::cout << std::endl;
-  std::cout << std::noshowpos;
-  std::cout << "pos_num  : " << pos_num << std::endl;
-  std::cout << "neg_num : " << neg_num << std::endl;
+    std::cout << "pos_num : " << pos_num << std::endl;
+    std::cout << "neg_num : " << neg_num << std::endl;
+    std::cout << std::showpos;
+    std::cout << "pos_num : " << pos_num << std::endl;
+    std::cout << "neg_num : " << neg_num << std::endl;
+    std::cout << std::endl;
+    std::cout << std::noshowpos;
+    std::cout << "pos_num  : " << pos_num << std::endl;
+    std::cout << "neg_num : " << neg_num << std::endl; */
+
+  // different number systems : std::dec, std::hex, std::oct
+
+  int pos_int{717171};
+  int neg_int{-47247};
+  double double_var{498.32};
+
+  std::cout << "default base format : " << std::endl;
+  std::cout << "pos_int : " << pos_int << std::endl;
+  std::cout << "neg-int : " << neg_int << std::endl;
+  std::cout << "double_var : " << double_var << std::endl;
+  std::cout << "------------" << std::endl;
+
+  std::cout << "pos_int in differnet bases : " << std::endl;
+  std::cout << "pos_int (dec) : " << std::dec << pos_int << std::endl;
+  std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
+  std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
 }
