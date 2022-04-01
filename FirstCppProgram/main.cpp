@@ -51,13 +51,12 @@ int main()
   bool yellow {false};
   bool police_stop {true};
 
-  std::cout << "Police officer stops(verbose)" << std::endl;
-  if(green) {
-    if(police_stop) {
+  std::cout << "Police officer stops(less verbose)" << std::endl;
+  if(green && !police_stop) {
+    std::cout << "Go" << std::endl;
+  }
+    else {
       std::cout << "Stop" << std::endl;
     }
-    else {
-      std::cout << "Go" << std::endl;
-    }
   }
-}
+
