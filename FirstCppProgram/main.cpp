@@ -1,24 +1,27 @@
 #include <iostream>
 
-// Data Ops
+//Flow Control
 
 int main()
-// Weird Integral Types
+//If Statement
 {
-  short int var1 {10};
-  short int var2 {20};
+  int number1 {55};
+  int number2 {60};
 
-  char var3 {40};
-  char var4 {50};
+  bool result = (number1 < number2); //expression yielding the condition
+  std::cout << std::boolalpha << "result : " << result << std::endl;
+  std::cout <<"----------------------" <<std::endl;
 
-  std::cout << "size of var1 : " << sizeof(var1) << std::endl;
-  std::cout << "size of var2 : " << sizeof(var2) << std::endl;
-  std::cout << "size of var3 : " << sizeof(var3) << std::endl;
-  std::cout << "size of var4 : " << sizeof(var4) << std::endl;
+  std::cout << "freestanding `if` statement" << std::endl;
 
-  auto result1 = var1 + var2;
-  auto result2 = var3 + var4;
+  //if(result)
+  if(result == true) {
+    std::cout << number1 << " is less than "<< number2 << std::endl;
+}
 
-  std::cout << "size of result1 : " << sizeof(result1) << std::endl;
-  std::cout << "size of result2 : " << sizeof(result2) << std::endl;
+  //if(!result)
+  if(!(result == true)) {
+    std::cout << number1 << " is NOT less than "  << number2 << std::endl;
+}
+
 }

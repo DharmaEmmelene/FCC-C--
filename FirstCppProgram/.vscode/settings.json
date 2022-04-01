@@ -40,5 +40,6 @@
     "iomanip": "cpp",
     "xlocmon": "cpp",
     "xloctime": "cpp"
-  }
+  },
+  "prettier.endOfLine": "auto"
 }
