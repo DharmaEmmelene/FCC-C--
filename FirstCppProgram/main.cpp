@@ -1,26 +1,34 @@
 #include <iostream>
-#include <limits>
+#include <cmath>
 // Data Ops
 
 int main()
-// Numeric Limits
+// Math functions
 {
-  std::cout << "The range for short is from " << std::numeric_limits<short>::min() << " to "
-            << std::numeric_limits<short>::max() << std::endl;
-  std::cout << "The range for unsigned short is from " << std::numeric_limits<unsigned short>::min() << " to "
-            << std::numeric_limits<unsigned short>::max() << std::endl;
-  std::cout << "The range for int is from " << std::numeric_limits<int>::min() << " to "
-            << std::numeric_limits<int>::max() << std::endl;
-  std::cout << "The range for unsigned int is from " << std::numeric_limits<unsigned int>::min() << " to "
-            << std::numeric_limits<unsigned int>::max() << std::endl;
-  std::cout << "The range for long is from " << std::numeric_limits<long>::min() << " to "
-            << std::numeric_limits<long>::max() << std::endl;
-  std::cout << "The range for float is from " << std::numeric_limits<float>::min() << " to "
-            << std::numeric_limits<float>::max() << std::endl;
-  std::cout << "The range(with lowest) for float is from " << std::numeric_limits<float>::min() << " to "
-            << std::numeric_limits<float>::max() << std::endl;
-  std::cout << "The range(with lowest) for double is from " << std::numeric_limits<double>::min() << " to "
-            << std::numeric_limits<double>::max() << std::endl;
-  std::cout << "The range(with lowest) for long double is from " << std::numeric_limits<long double>::min() << " to "
-            << std::numeric_limits<long double>::max() << std::endl;
+  double weight {7.7};
+
+  //floor
+  std::cout << "Weight rounded to floor is : " << std::floor(weight) << std::endl;
+  std::cout << "---------------------------------------------" <<std::endl;
+
+  //ceil
+  std::cout << "Weight rounded to ceil is : " << std::ceil(weight) << std::endl;
+  std::cout << "---------------------------------------------" <<std::endl;
+
+  //abs
+  double savings {-5000};
+
+  std::cout << "Abs of weight is : " << std::abs(weight) << std::endl;
+  std::cout << "Abd of savings is : " << std::abs(savings) << std::endl;
+  std::cout << "---------------------------------------------" <<std::endl;
+
+  //exp : f(x) = e ^ x , where e = 2.71828 
+  double exponential = std::exp(10);
+  std::cout << "The exponential of 10 is : " << exponential << std::endl;
+  std::cout << "---------------------------------------------" <<std::endl;
+
+  // pow
+  std::cout << "3 ^ 4 is : " << std::pow(3, 4) <<std::endl;
+  std::cout <<" 9 ^ 3 is : " << std::pow(9, 3) <<std::endl;
+  std::cout << "---------------------------------------------" <<std::endl;
 }
