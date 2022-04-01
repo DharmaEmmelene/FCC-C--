@@ -5,7 +5,7 @@
 int main()
 // Math functions
 {
-  double weight {7.7};
+  /* double weight {7.7};
 
   //floor
   std::cout << "Weight rounded to floor is : " << std::floor(weight) << std::endl;
@@ -35,5 +35,13 @@ int main()
   //reverse op of e ^ 4 = 54.59
   std::cout << "Log ; to get 54.59, you would elevate e to the power of : " << std::log(54.59) << std::endl;
   //log(10), 10 ^ 4 = 10000, elevate 10 to the power of
-  std::cout << "To get 1000, elevate 10 to the power of : " << std::log10(10000) << std::endl;
+  std::cout << "To get 1000, elevate 10 to the power of : " << std::log10(10000) << std::endl; */
+
+  //sqrt
+  std::cout << "The square root of 81 is : " << std::sqrt(81) << std::endl;
+
+  //round Halfway point are rounded away from 0
+  std::cout << "3.654 rounded to : " << std::round(3.654) << std::endl;
+  std::cout << "2.5 rounded to : " << std::round(2.5) << std::endl;
+  std::cout << "2.4 rounded to : " << std::round(2.4) << std::endl;
 }
