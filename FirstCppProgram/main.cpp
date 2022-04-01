@@ -33,7 +33,7 @@ int main()
   } else {
     std::cout << number1 << " is NOT less than " << number2 << std::endl;
   }
-  */
+  
   //use expression as condition directly
   std::cout << "Using expression as a condition : " << std::endl;
 
@@ -42,5 +42,22 @@ int main()
   } else {
     std::cout << number1 << " is NOT less than " << number2 << std::endl;
   }
+*/
+  //Nesting if statements
+  std::cout << "Nesting `if` statements" << std::endl;
 
+  bool red = false;
+  bool green {true};
+  bool yellow {false};
+  bool police_stop {true};
+
+  std::cout << "Police officer stops(verbose)" << std::endl;
+  if(green) {
+    if(police_stop) {
+      std::cout << "Stop" << std::endl;
+    }
+    else {
+      std::cout << "Go" << std::endl;
+    }
+  }
 }
