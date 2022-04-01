@@ -5,7 +5,7 @@
 int main()
 //If Statement
 {
-  int number1 {55};
+  int number1 {65};
   int number2 {60};
   
   bool result = (number1 < number2); //expression yielding the condition
@@ -23,7 +23,7 @@ int main()
   //if(!result)
   if(!(result == true)) {
     std::cout << number1 << " is NOT less than "  << number2 << std::endl;
-}*/
+}
 
   //using "else" 
   std::cout << "using else clause" << std::endl;
@@ -33,4 +33,14 @@ int main()
   } else {
     std::cout << number1 << " is NOT less than " << number2 << std::endl;
   }
+  */
+  //use expression as condition directly
+  std::cout << "Using expression as a condition : " << std::endl;
+
+  if(number1 < number2) {
+    std::cout << number1 << " is less than " << number2 << std::endl;
+  } else {
+    std::cout << number1 << " is NOT less than " << number2 << std::endl;
+  }
+
 }
